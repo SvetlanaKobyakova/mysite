@@ -2,38 +2,82 @@
 <html lang="ru">
     <head>
         <tatle>главная страница</tatle>
+        <style>
+            td, th {
+                border: solid 1px black;
+            }
+            table {
+                border-color: collapse;
+                border: solid 1px red;
+            }
+        </style>
     </head>
-    <body>
-<p>Новый абзац</p>
-<b>Жирный текст</b>
-<p>
-    <del>зачеркнутый текст</del>
-</p>
-<p>
-<i>текст курсивом</i>
-</p>
-<small>текст чуть меньше размером</small>
-<u>подчеркнутый текст</u>
-<p>X<sub>i</sub> = Y<sup>2</sup> + Z<sup>2</sup>
-</p>
-<h2>нумерованный список</h2>
-<ol style="list-style-type: lower-alpha;">
-    <li>огонь</li>
-    <li>вода</li>
-    <li>земля</li>
-    <li>воздух</li>
-</ol>
-<h2>ненумерованный список</h2>
-<!--комментарий не читается браузером-->
 
-<details>
-    <summary>стихии</summary>
-    <ul style="list-style-type: square; color:rgb(89, 49, 128)">
-        <li style="color:rgb(240, 14, 14)">огонь</li>
-        <li >вода</li>
-        <li>земля</li>
-        <li>воздух</li>
-    </ul>
-</details>
+    <body>
+        <a href="#table-1">
+            <img src="img/Снимок экрана 2024-02-10 143738.png" alt="мое изображение" width ="400px" height="200px"/></a>
+        <p>Новый абзац</p>
+        <b>Жирный текст</b>
+        <p>
+            <del>зачеркнутый текст</del>
+        </p>
+        <p>
+        <i>текст курсивом</i>
+        </p>
+        <small>текст чуть меньше размером</small>
+        <u>подчеркнутый текст</u>
+        <p>X<sub>i</sub> = Y<sup>2</sup> + Z<sup>2</sup>
+        </p>
+        <h2>нумерованный список</h2>
+        <ol style="list-style-type: lower-alpha;">
+            <li>огонь</li>
+            <li>вода</li>
+            <li>земля</li>
+            <li>воздух</li>
+        </ol>
+        <h2>ненумерованный список</h2>
+        <!--комментарий не читается браузером-->
+
+        <details>
+            <summary>стихии</summary>
+            <ul style="list-style-type: square; color:rgb(89, 49, 128)">
+                <li style="color:rgb(240, 14, 14)">огонь</li>
+                <li >вода</li>
+                <li>земля</li>
+                <li>воздух</li>
+            </ul>
+        </details>
+
+
+
+        <table id="table-1" class="table-1">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Телефон</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>Иван</td>
+                <td>Петров</td>
+                <td>888</td>
+            </tr>
+
+            <tr>
+                <td>Иван</td>
+                <td>Иванов</td>
+                <td>4444</td>
+            </tr>
+
+            <tr>
+                <td>Петр</td>
+                <td>Петров</td>
+                <td>83333</td>
+            </tr>
+        </tbody>
+        </table>
+
     </body>
     </html>
