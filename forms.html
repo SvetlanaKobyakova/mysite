@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Формы</title>
-    </head>
-    <body>
-        <form action="#" metod="post" enctype="application/x-www-form-urlencoded">
+  <head>
+    <title>Формы</title>
+  </head>
+  <body>
+    <form action="#" metod="post" enctype="application/x-www-form-urlencoded">
+      <p>
+        <label for="login">Логин:</label>
+        <input
+          id="login"
+          name="login"
+          type="text"
+          placeholder="Логин"
+          maxlength="5"
+          autofocus
+        />
+      </p>
 
-            <p>
-            <lable for="login"> Логин:</lable>
-            <input id="login" name="login" type="text" placeholder="Логин" maxlength="5" autofocus/>
-            </p>
+      <p>
+        <label for="password">Пароль:</label>
+        <input
+          name="password"
+          type="password"
+          placeholder="Пароль"
+          maxlength="5"
+        />
+      </p>
 
-            <p>            
-            <labele for="password"> Пароль:</labele>
-            <input name="password" type="password" placeholder="Пароль" maxlength="5"/>
-            </p>
+      <p>
+        <label for="phone">Телефон:</label>
+        <input name="phone" type="text" value="123456789" disabled />
+      </p>
 
-            <p>            
-            <labele for="phone"> Телефон:</labele>
-            <input name="phone" type="text" value="123456789" disabled/>
-            </p>
+      <p>
+        <label for="age">Возвраст:</label>
+        <input name="age" type="number" min="12" max="120" step="2" />
+      </p>
 
-            <p>            
-            <labele for="age"> Возвраст:</labele>
-            <input name="age" type="number" min="12" max="120" step="2"/>
-            </p>
+      <p>
+        <label for="rbutton">Радио-кнопка:</label>
+        <input name="rbutton" type="radio" />
+      </p>
 
-            <p>
-            <labele for="rbutton"> Радио-кнопка:</labele>
-            <input name="rbutton" type="radio"/>
-            </p>
+      <p>
+        <label for="chbox">Чек-бокс:</label>
+        <input name="chbox" type="chekbox" />
+      </p>
 
-            <p>
-            <labele for="chbox"> Чек-бокс:</labele>
-            <input name="chbox" type="chekbox"/>
-            </p>
+      <p>
+        <label for="chbox2">Чек-бокс2:</label>
+        <input name="chbox2" type="chekbox" checked />
+      </p>
 
-            <p>
-            <labele for="chbox2"> Чек-бокс2:</labele>
-            <input name="chbox2" type="chekbox" checked/>
-            </p>
+      <p>
+        <label for="color">Цвет:</label>
+        <input name="color" type="color" />
+      </p>
 
-            <p>
-            <labele for="color"> Цвет:</labele>
-            <input name="color" type="color"/>
-            </p>
+      <p>
+        <label for="file">Файл:</label>
+        <input name="file" type="file" />
+      </p>
 
-            <p>
-            <labele for="file"> Файл:</labele>
-            <input name="file" type="file"/>
-            </p>
+      <p>
+        <label for="range">Ползунок:</label>
+        <input name="range" type="range" min="1" max="10" step="1" value="10" />
+      </p>
 
-            <p>
-            <labele for="range"> Ползунок:</labele>
-            <input name="range" type="range" min="1" max="10" step="1" value="10"/>
-            </p>
-
-            <input type="submit" value="Войти"/>
-            <input type="submit" value="Сбросить"/>
-        </form>
-    </body>
+      <input type="submit" value="Войти" />
+      <input type="submit" value="Сбросить" />
+    </form>
+  </body>
 </html>
