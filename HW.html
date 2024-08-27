@@ -1,28 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Домашнее задание2</title>
-</head>    
-<body>
-    
-    <h2>Цвета</h2>
-    <ol style="list-style-type: decimal">
-        <li style="list-style-type: decimal; color: red">Красный</li>
-        <li style="list-style-type: decimal; color: green">Зеленый</li>
-        <li style="list-style-type: decimal; color: yellow">Желтый</li>
-        <li style="list-style-type: decimal; color: black">Черный</li>
-        <li style="list-style-type: decimal; color: blue">Синий</li>
-    </ol>
-    <h2>Грибы</h2>
-   
-        <ul style="list-style-type: square; color: black (4, 4, 54)">
-            <li>Подберезовики</li>
-            <li>Волнушки</li>
-            <li>Лисички</li>
-            <li>Подосиновики</li>
-            <li>Грузди</li>
-        </ul>
+    <title>Домашнее задание3</title>
+    <style>
+        td, th {
+            border: solid 1px black;
+        }
+        th {
+            color: red;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+       
+    </style>
+</head> 
+    <body>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+            <p>
+            <label for="login">Логин</label>
+            <input name="login" type="text"/>
+            </p>
 
+            <p>
+            <label for="password">Пароль</label>
+            <input name="Password" type="password"/>
+            </p>
+
+            <p>
+            <label for="rbutton">Радио-кнопка</label>
+            <input name="rbutton" type="radio"/>
+            </p>
+
+            <p>
+                <label for="chbox">Чекбокс</label>
+                <input name="chbox" type="chekbox"/>
+            </p>
+
+            <p>
+                <label for="color">Цвет:</label>
+                <input name="color" type="color"/>
+            </p>
+
+            <p>
+                <label for="file">Файл:</label>
+                <input name="file" type="file"/>
+            </p>
+
+            
+            <input type="submit" value="Войти"/>
+            <input type="reset" value="Сбросить"/>
+
+        </form>
+        
+        <table id="table-1" class="table-1">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Отчество</th>
+                    <th>Телефон</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Иван</td>
+                    <td>Иванов</td>
+                    <td>Иванович</td>
+                    <td>111111</td>
+                </tr>
+
+                <tr>
+                    <td>Петр</td>
+                    <td>Петров</td>
+                    <td>Петрович</td>
+                    <td>2222222</td>
+                </tr>
+                
+                <tr>
+                    <td>Сидр</td>
+                    <td>Сидоров</td>
+                    <td>Сидорович</td>
+                    <td>33333</td>
+                </tr>
+                
+                <tr>
+                    <td>Василий</td>
+                    <td>Васильев</td>
+                    <td>Васильевич</td>
+                    <td>4444444</td>
+                </tr>
+                
+                <tr>
+                    <td>Макар</td>
+                    <td>Макаров</td>
+                    <td>Макарович</td>
+                    <td>555555</td>
+                </tr>
+            </tbody>
+        </table>
 </body>
 
 </html>
