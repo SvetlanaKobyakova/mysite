@@ -19,23 +19,51 @@
     <body>
         <form action="#" method="post" enctype="application/x-www-form-urlencoded">
             <p>
-            <label for="login">Логин</label>
-            <input name="login" type="text"/>
+            <label style="color: red;" for="login">Логин:</label>
+            <input id="login" name="login" type="text" placeholder="Логин" maxlength="10"/>
             </p>
 
             <p>
-            <label for="password">Пароль</label>
-            <input name="Password" type="password"/>
+            <label style="color: red;" for="password">Пароль:</label>
+            <input name="Password" type="password" placeholder="Пароль"/>
             </p>
 
             <p>
-            <label for="rbutton">Радио-кнопка</label>
-            <input name="rbutton" type="radio"/>
+                <label for="name">Имя:</label>
+                <input name="name" type="text"/>
             </p>
 
             <p>
-                <label for="chbox">Чекбокс</label>
-                <input name="chbox" type="chekbox"/>
+                <label for="surname">Фамилия:</label>
+                <input name="surname" type="text"/>
+            </p>
+
+            <p>
+            <label for="age">Возраст:</label>
+            <input name="age" type="number" min="12" max="90" step="1"/>
+            </p>
+
+            <p>
+                <label for="phone">Телефон:</label>
+                <input name="phone" type="text"/>
+            </p>
+
+            <p>
+                <label for="city">Город:</label>
+                <input name="city" type="text"/>
+            </p>
+
+            <p>
+            <i>Пол:</i>
+                <label for="chbox">М:</label>
+                <input name="chbox" type="checkbox"/>
+                <label for="chbox2">Ж:</label>
+                <input name="chbox2" type="checkbox"/>
+            </p>
+
+            <p>
+                <label for="size">Размер:</label>
+                <input name="size" type="number" min="40" max="58" step="2"/>
             </p>
 
             <p>
@@ -47,59 +75,59 @@
                 <label for="file">Файл:</label>
                 <input name="file" type="file"/>
             </p>
-
-            
+                       
             <input type="submit" value="Войти"/>
             <input type="reset" value="Сбросить"/>
 
         </form>
-        
+        <p>
         <table id="table-1" class="table-1">
             <thead>
                 <tr>
                     <th>Имя</th>
-                    <th>Фамилия</th>
                     <th>Отчество</th>
+                    <th>Фамилия</th>
                     <th>Телефон</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Иван</td>
-                    <td>Иванов</td>
                     <td>Иванович</td>
+                    <td>Иванов</td>
                     <td>111111</td>
                 </tr>
 
                 <tr>
                     <td>Петр</td>
-                    <td>Петров</td>
                     <td>Петрович</td>
+                    <td>Петров</td>
                     <td>2222222</td>
                 </tr>
                 
                 <tr>
-                    <td>Сидр</td>
-                    <td>Сидоров</td>
+                    <td>Сидор</td>
                     <td>Сидорович</td>
+                    <td>Сидоров</td>
                     <td>33333</td>
                 </tr>
                 
                 <tr>
                     <td>Василий</td>
-                    <td>Васильев</td>
                     <td>Васильевич</td>
+                    <td>Васильев</td>
                     <td>4444444</td>
                 </tr>
                 
                 <tr>
                     <td>Макар</td>
-                    <td>Макаров</td>
                     <td>Макарович</td>
+                    <td>Макаров</td>
                     <td>555555</td>
                 </tr>
             </tbody>
         </table>
+        </p>
 </body>
 
 </html>
