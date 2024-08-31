@@ -1,0 +1,42 @@
+.header{
+    background-color: rgb(2, 238, 238);
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.main-title{
+    font-size: x-large;
+    text-align: center;
+    font-family: cursive;
+    color: blue;
+    padding-top: 25px;
+}
+
+.main-img{
+    text-align: center;
+    
+}
+
+.main-text{
+    font-family: cursive;
+    padding-left: 600px;
+    color: rgb(247, 7, 139);
+}
+
+.link{
+    padding-left: 550px;
+    font-family: cursive;
+}
+
+.footer{
+    background-color: rgb(2, 238, 238);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            bottom: 25px;
+            width: 100%;
+}
