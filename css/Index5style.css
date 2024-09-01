@@ -1,0 +1,55 @@
+.header{
+    background-color: rgb(249,102,160);
+    color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: cursive;
+    margin: 50px;
+}
+
+.footer{
+    background-color: rgb(249,102,160);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            bottom: 25px;
+            width: 100%;
+}
+
+.main-img{
+    text-align: center;
+}
+
+.main-text{
+
+}
+
+.container{
+    margin: 30px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#cont-1{
+    font-family: cursive;
+}
+
+#cont-2{
+    font-family: cursive; 
+}
+
+#cont-3{
+    font-size: 20px;
+    font-style: italic;
+}
+
+#cont-4{
+   
+}
+
+.text{
+    color: blue;
+}

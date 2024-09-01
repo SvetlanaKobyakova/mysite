@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!--не поняла как релизовать блок <nav>-->
+    <head>
+        <title>Домашняя работа 27.08.</title>
+        <link rel="stylesheet" href="css/Index5style.css">
+        <style>
+            td, th {
+                border: solid 1px black;
+            }
+            table {
+                border-color: collapse;
+                border: solid 1px black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="header">
+            <header>
+                <h1>Магазин Подарков</h1>
+            </header>
+        </div>
+
+        <main>
+            <article>
+                <div id="cont-1" class="container">
+                    <div class="main-img">
+                        <a href="page 2">
+                        <img src="img/Васильки.jpg" width="90%" height="350px"></a>
+                    </div>
+
+                    <a href="#cont-3">
+                        <h2>Цветы</h2>
+                    </a>
+
+                    <section>
+                        <span class="text">
+                            <h3>Наши флористы подбирают только свежие и качественные цветы, чтобы каждый букет стал настоящим произведением искусства.</h3>
+                        </span>
+
+                        <details>
+                            <summary>Букеты</summary>
+                            <div class="main-text">
+                                <ul style="list-style-type: disc;">
+                                    <li>Розы</li>
+                                    <li>Мимозы</li>
+                                    <li>Ромашки</li>
+                                    <li>Незабудки</li>
+                                </ul>
+                            </div>
+                        </details>              
+                    </section>
+
+                    <section>
+                        <span class="text">
+                            <h3>Здесь вы найдете разнообразие зелёных друзей, которые не только украсят ваш дом, но и создадут атмосферу уюта и гармонии</h3>
+                        </span>
+
+                        <details>
+                            <summary>Комнатные растения</summary>
+                            <div class="main-text">
+                                <ul style="list-style-type: square;">
+                                    <li>Розы</li>
+                                    <li>Мимозы</li>
+                                    <li>Ромашки</li>
+                                    <li>Незабудки</li>
+                                </ul>
+                            </div>   
+                        </details>           
+                    </section>
+                </div>
+
+                <section>
+                    <div id="cont-2" class="container">
+                        <div class="main-img">
+                            <img src="img/Носорог.jpg" width="250px" height="350px">
+                            <img src="img/Игрушки.jpg" width="500px" height="350px">
+                            <img src="img/Мишка в шапке.jpg" width="250px" height="350px">
+                        </div>
+
+                        <a href="#cont-3">
+                            <h2>Игрушки</h2>
+                        </a>
+
+                        <span class="text">
+                            <h3>Подарите улыбку своим близким с помощью уникальных и креативных подарков, которые сделают каждый день особенным!</h3>
+                        </span>
+
+                        <div class="main-text">
+                            <ol style="list-style-type: lower-alpha;">
+                                <li>Мишки</li>
+                                <li>Мартышки</li>
+                                <li>Плюшки</li>
+                                <li>Книжки</li>
+                            </ol>
+                        </div> 
+                    </div>
+                </section>            
+            </article>
+        </main>
+
+        <form action="#" metod="post" enctype="application/x-www-form-urlencoded">
+            <div id="cont-3" class="container">
+                <p>
+                <label for="login">Логин:</label>
+                <input
+                    id="login"
+                    name="login"
+                    type="text"
+                    placeholder="Логин"
+                    maxlength="9"
+                />
+                </p>
+
+                <p>
+                    <label for="password">Пароль:</label>
+                    <input
+                      name="password"
+                      type="password"
+                      placeholder="Пароль"
+                      maxlength="5"
+                    />
+                </p>
+
+                <p>
+                    <label for="name">Имя:</label>
+                    <input name="name" type="text" />
+                </p>
+
+                <p>
+                    <label for="surname">Фамилия:</label>
+                    <input name="surname" type="text" />
+                </p>
+        
+                <p>
+                    <label for="email">Электронная почта:</label>
+                    <input name="email" type="text"/>
+                </p>
+
+                <p>
+                    <label for="phone">Телефон:</label>
+                    <input name="phone" type="text"/>
+                </p>
+        
+                <p>
+                    <label for="age">Возвраст:</label>
+                    <input name="age" type="number" min="16" max="100" step="1" />
+                </p>
+        
+                <p>
+                    <label for="chbox">Пол:</label>
+                    М:<input name="chbox" type="checkbox"/>
+                    Ж:<input name="chbox2" type="checkbox" checked/>
+                </p>
+        
+                <input type="submit" value="Зарегистрироваться" />
+                <input type="submit" value="Сбросить" />
+            </div>    
+          </form>
+
+          <div id="cont-4" class="container"> 
+            <table id="table-1" class="table-1">
+                <thead>
+                    <tr>
+                        <th>Наименование</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Розы</td>
+                        <td>1 руб.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Мишка</td>
+                        <td>2 руб.</td>
+                    </tr>
+
+                    <tr>
+                        <td>Книжка</td>
+                        <td>3 руб.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="htpps://google.com">Посмотри сайт</a>
+
+        <footer>
+            <div class="footer">
+                <p>
+                    <b>ООО "Колокольчик"</b>
+                </p>
+                <p>
+                    <b>bell@gmail.com</b>
+                </p>
+                <p>
+                    <b>+7 812 333-22-33</b>
+                </p>
+            </div>
+        </footer>
+
+    </body>
+</html>
