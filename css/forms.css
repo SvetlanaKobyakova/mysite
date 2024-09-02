@@ -1,0 +1,58 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.input-form{
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid;
+    border-radius: 16px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0,123,255)), to(rgb(189, 239, 243)));
+    background: -o-linear-gradient(rgb(0,123,255), rgb(189, 239, 243));
+    background: linear-gradient(rgb(0,123,255), rgb(189, 239, 243));
+}
+
+.input-group{
+    margin-bottom: 20px;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.input-group input:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input-form button{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-form button:hover {
+    background: #0056b3;
+}
