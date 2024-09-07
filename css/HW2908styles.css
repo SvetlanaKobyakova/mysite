@@ -1,32 +1,53 @@
-body{
-    margin: 0;
-    background: black;
-}
-
 table{
     border-collapse: collapse;  
     border: solid 1px black;
     width: 100%;
 }
 
+body{
+    background: black;
+}
+
 th{
-    border: solid 1px black;
+    height: 30px;
+    text-align: left;
 }
 
 td{
-    border: solid 1px black;
+    height: 30px;
 }
 
 .table-1{
- 
+    margin: 60px;
+    margin-bottom: 60px;  
 }
 
 .table-2{
-
+    margin: 60px;
+    margin-bottom: 60px;
 }
 
 .table-3{
-    
+    margin: 60px;
+    margin-bottom: 60px;
 }
 
+#col-1{
+    background: red;
+}
 
+#col-2{
+    background: green;
+}
+
+#col-3{
+    background: blue;
+}
+
+#col-4{
+    background: rgb(238, 236, 236);
+}
+
+#col-5{
+    background: white;
+}
