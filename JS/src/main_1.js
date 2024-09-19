@@ -59,6 +59,7 @@ function rectangleInfo(o){
 }
 */
 
+/*
 let rectangle = {
     a: 0,
     b: 0,
@@ -105,3 +106,55 @@ function set_rectangle(o) {
             }`
         );
     }
+*/
+
+/*
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+*/
+
+/*
+$(document).ready(function () {
+  $("button").click(function () {
+    $("p").toggle();
+  });
+});
+*/
+
+/*
+$(document).ready(function () {
+  $("p").text("Текст установленный из jQuery");
+  $("p").html("<h3>Текст установленный из jQuery</h3>");
+  $("input").val("Значение поля, установленное из jQuery");
+  $("p").attr("style","font-size: 24px;");
+
+    $("p").append("Hello") - добавление значения в конец тега;
+    $("p").prepend(Oh, man..) - добавление значения в начало тега;
+    $("p").after("div");
+    $("p").before("div");
+
+  $("p").remove() - удаление дочернего элемента (или указанного в методе);
+  $("p").empty() - удаление всех дочерних элементов;
+});
+*/
+
+
+$(document).ready(function () {
+    $.ajax({
+        url: "https://jsonplaceholder.typicode.com/todos/1",
+        type: "GET",
+        success: function(data) {
+            for (key in data) {
+                $("#ajaxPicture").append(key + ":" + data[key] + "<br>");
+            }
+        },
+        error: function(error) {
+            $("ajaxPicture").text(error);
+        },
+    });
+});
+
+
