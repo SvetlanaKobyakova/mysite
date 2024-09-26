@@ -47,3 +47,11 @@ let input = prompt("Введите трехзначное число: ");
 let last = input.slice(2);
 let res = last + input.slice(0, 2);
 alert("Ваше число теперь: " + res);
+
+
+let x = Number(prompt("Введите целое число:"));
+if(x%2==0)
+    x = "четное";
+else
+    x = "нечетное";
+alert("Ваше число:" + x);
