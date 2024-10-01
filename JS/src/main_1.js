@@ -141,7 +141,7 @@ $(document).ready(function () {
 });
 */
 
-
+/*
 $(document).ready(function () {
     $.ajax({
         url: "https://jsonplaceholder.typicode.com/todos/1",
@@ -156,5 +156,5 @@ $(document).ready(function () {
         },
     });
 });
-
+*/
 
