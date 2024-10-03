@@ -8,7 +8,7 @@
   </body>
 
   <script>
-    /*
+/*
     let age = 24;
     let result;
     if (age>=18){
@@ -26,9 +26,9 @@
     }else{
         console.log("3");
     }
-        */
+*/
 
-    /*const myArray = [];
+/*const myArray = [];
     const people = [
         ["Dima",25,false],
         ["Anton",23,true],
@@ -41,8 +41,8 @@
     console.log(igor)
     people[10] = "Sergey";
     console.log(people[10]);
-    */
-   /*
+*/
+/*
     const myArray = [];
     const people = [
         ["Dima",25,false],
@@ -62,7 +62,8 @@
     console.log(people[1][3]);
     people[3] = ["Toma",24,false];
     console.log(people)
- */   
+ */  
+/* 
     const myArray = [];
     const people = [
         ["Dima",25,false],
@@ -73,8 +74,157 @@
     console.log(people[1][3]);
     people[3] = ["Toma",24,false];
     console.log(people)
+*/
+
+    function hello(name){
+     console.log(`Hello, ${name}`)
+    }
+
+    function sumNumbers(a,b){
+     console.log(`${a} + ${b} = ${a + b}`)
+    }
+
+    function info(name,age,city){
+        console.log("print info:")
+        console.log(`Hello, my name is ${name}. I am ${age} years old. I am from ${city}`)
+    }
+
+    const sumNumFunction = sumNumbers;
+
+    // Функция-выражение
+    const message = function(msg){
+        console.log(msg)
+    }
+
+    function print(){
+        console.log("Outer function");
+        printHello();
+        printHello();
+
+        function printHello(){
+            console.log("Inner function")
+        }
+    }
 
 
-    
+
+    hello("Ivan")
+    sumNumbers(7,9)
+    info("Ivan", 17, "Moscow")
+    sumNumFunction(8,8)
+    message("Function without name")
+    print()
+
+
+    function printPerson(person){
+     console.log("Name", person[0]);
+     console.log("Age", person[1]);
+     console.log("Email", person[2]);
+    } 
+
+    function printPersonSpread(name,age,email){
+     console.log("Name", name);
+     console.log("Age", age);
+     console.log("Email", email);
+    } 
+
+    const Ivan = ["Ivan",28, "Ivan@gmail.com"]
+
+    printPerson(Ivan)
+
+    printPersonSpread(...Ivan)
+
+
+
+    function sumAnyElements(){
+        let result = 0;
+        for (const n of arguments){
+            result += n;
+        }
+        console.log(result)
+    }
+
+     function sumAnyElements(a,b){
+        console.log(`a = ${a}`)
+        console.log(`b = ${b}`)
+
+        let result = 0;
+        for (const n of arguments){
+            result += n;
+        }
+        console.log("Сумма чисел:", result);
+    }
+
+    sumAnyElements(5)
+    sumAnyElements(5,1)
+    sumAnyElements(5,4,1)
+    sumAnyElements(5,5,5,5,5)
+
+
+    function getName(name){
+        const newName = `${name}!`
+        return newName
+    }
+
+    let newName = getName("Ivan")
+    console.log(newName)
+
+
+    function getSum(a,b){
+        const result = a + b
+        return result
+    }
+
+    //let num = getSum(3,4)
+    //console.log(num)
+    //console.log(getSum(3,4)) //второй вариант написания
+
+
+    function getSubtract(a,b){
+        const result = a - b
+        return result
+    }
+
+    function operation(a,b,func){
+        const result = func(a,b)
+        return result
+    }
+
+    console.log("Сумма чисел")
+    let res1 = operation(3,4,getSum)
+    console.log(res1)
+
+    console.log("Разность чисел")
+    let res2 = operation(3,4,getSubtract)
+    console.log(res2)
+
+
+    //Стрелочные функции
+
+    function hello(){
+    console.log("Hello")
+    }
+
+    hello()   
+
+    const hi = (msg) => console.log(msg)
+    hi("Message")
+
+
+    const newSum = (a,b) => console.log(a + b)
+    newSum(4,6)
+
+    const newSum = (a,b) => a + b   //второй вариант записи
+    result = newSum(4,6)
+    console.log(result)
+
+
+    const squere = n => {
+        const result = n*n
+        return result
+    }
+
+
+
   </script>
 </html>
