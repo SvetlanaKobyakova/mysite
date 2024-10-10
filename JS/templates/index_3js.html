@@ -1,0 +1,156 @@
+<html>
+  <head>
+    <title>mypage_3</title>
+  </head>
+  <body>
+    javaScript
+  </body>
+
+  <script>
+   //let user = new Object()  или
+//     const user = {};
+
+//     const car = {
+//         brand: "Lada",
+//         model: "2115",
+//     };
+
+//     user.name = "Misha";
+//     user.age = 22;
+
+//     console.log(user)
+//     console.log(user.name)
+//     console.log(user.age)
+//     console.log(user.phone)
+
+
+//     const breed = "Mops";
+//     const color = "Red";
+//     const dog = {breed, color}
+//     console.log(dog)
+
+
+//     const power = 230;
+//     const capasity = 2.5;
+
+//     const engine = {power, capasity}
+
+//     const carLada = {
+//         brand: "lada",
+//         model: "Aura",
+//         engine,
+//         toGo: function(){
+//             console.log(`${this.brand} ${this.model} GO!`)           //вывести данные этого объекта, this - это ссылка на текущий объект
+//         }
+//     }
+
+//     console.log(carLada)
+//     carLada.toGo()
+
+
+//     const cat = {
+//     cat ["color"] = "Белая",
+//     cat ["breed"] = "Сиамская",
+//     cat ['may'] = function(){
+//     console.log("Maay")
+//         }
+//     }
+
+//     const home = {
+//         "height Wall": 3,
+//         "areaKitchen": 22
+//     }
+//     delete home["height Wall"]
+//     delete home.areaKitchen
+
+//     console.log(home["height Wall"])     ///если пробел, то в квадратных скобках
+
+    
+//     const carInfo = [
+//         ["brand","Audi"],
+//         ["model", "A6"],
+//         ["color", "Black"]
+//     ]
+//     const carInfoObject = Object.fromEntries(carInfo)
+//     console.log(carInfoObject)
+//     console.log(carInfoObject.brand)
+// */
+
+//     //console.log(this)
+// /*
+//     function testFunc(){
+//         let name = "Misha"
+//         console.log(this.name)
+//     }
+//     let name = "Alex"
+//     testFunc()
+
+
+//     const user = {
+//         name: "Misha",
+//         display: function(){
+//             console.log(this.name)
+//         }
+//     }
+
+//     let name = "Alex"
+//     user.display()
+
+
+//      function outerFunc(){
+//         let age = 100;
+//         console.log(this.age);
+//      }
+
+//      const manFirst = {
+//         age: 50,
+//         display:  outerFunc,
+//      };
+
+//      const manSecond = {
+//         age: 25,
+//         display:  outerFunc,
+//      };
+
+//      window.age = 10;
+
+//      outerFunc();
+//      manFirst.display();
+//      manSecond.display();
+
+
+    // const user = {
+    //     name: "Misha",
+    //     say: ()=>console.log(`My name is ${this.name}`)
+    // }
+    // var name = "Alex"
+    // user.say()
+
+
+    // const user = {
+    //     name: "Misha",
+    //     hello(){
+    //         console.log("Hello")
+    //         let say = ()=>console.log(`My name is ${this.name}`)
+    //         say()
+    //     }
+    // }
+    // user.hello()
+
+
+    const country = {
+        name:"Россия",
+        language: "Русский",
+        capital:{
+            name: "Москва",
+            population: 13000000,
+            year: 877
+        }
+    }
+
+    console.log(`Столица - ${country.capital.name}`)
+    console.log(`Население - ${country["capital"]["population"]}`)
+    console.log(`Год - ${country.capital["year"]}`)
+
+  </script>
+</html>
