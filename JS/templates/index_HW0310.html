@@ -9,28 +9,56 @@
 
   <script>
 
+const sum = (a,b) => console.log(a + b);
+sum(1,5);
+
+const calc = (a,b) => console.log (a - b);
+calc(5,2);
+
+const calc = (a,b) => console.log (a * b);
+calc(3,8);
 
 
-
-// 1. Написать стрелочные функции для математических операций
-// 2. Вызвать их для чисел, переданных в параметрах функции
 // 3. Определить массив, состоящий из массивов с информацией о машине
-// 4. Написать функцию, которая выводит информацию обо всех машинах
 
-// [
-// 	["bmw", "320i", 2020],
-// 	["audi", "a6", 2022],
-// 	["bmw", "320d", 2021]
-// ]
+const myArray = [];
+    const car = [
+        ["BMV","320i",2020],
+        ["Audi","a6",2022],
+        ["BMV","320d",2021]
+    ];
+    console.log(car);
 
-// Пример вывода:
-// 1 машина:
-// марка - 
-// модель - 
-// год выпуска - 
+//     function info(name,model,year){
+//       console.log(`Машина 1: ${name}. Модель: ${model}. Год выпуска:${year}`);
+//     }
+//     info("BMV","320i",2020)
 
-// 2 машина:
-// ----==----
+//     function info(name,model,year){
+//       console.log(`Машина 2: ${name}. Модель: ${model}. Год выпуска:${year}`);
+//     }
+//     info("Audi","a6",2022)
+
+//     function info(name,model,year){
+//       console.log(`Машина 3: ${name}. Модель: ${model}. Год выпуска:${year}`);
+//     }
+//     info("BMV","320d",2021)
+
+  function infoCar(car) {
+    console.log("Машина:");
+    console.log("Name:", car[0]);
+    console.log("Model:", car[1]);
+    console.log("Year:", car[2]);
+    
+}
+  const car1 = ["BMV", "320i", 2020]; 
+  const car2 = ["Audi","a6",2022]; 
+  const car3 = ["BMV","320d",2021];
+    
+  infoCar(car1);
+  infoCar(car2);
+  infoCar(car3);
+
 
 
 </script>
