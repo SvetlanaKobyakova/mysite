@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>HW15_10</title>
+  </head>
+
+  <body>
+    <input tape="number" name="numberInputField" id="numberInput1" />
+    <input tape="number" name="numberInputField" id="numberInput2" />
+    <button onclick="displaySum()" id="btnSum">Показать сумму чисел</button>
+
+
+  </body>
+
+  <script>
+    function displaySum() {
+      const inputValue = document.getElementById("numberInput1").value;
+      const inputValue = document.getElementById("numberInput2").value;
+      //  const inputValue = document.querySelector('#textInput').value;
+      document.querySelector("#textDisplay").innerText = inputValue;
+    }
+
+  </script>
+</html>
