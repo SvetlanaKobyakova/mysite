@@ -8,18 +8,19 @@
   <body>
     <input tape="number" name="numberInputField" id="numberInput1" />
     <input tape="number" name="numberInputField" id="numberInput2" />
-    <button onclick="displaySum()" id="btnSum">Показать сумму чисел</button>
-
-
+    <button onclick="getSum()">Показать сумму чисел</button>
+   
   </body>
 
   <script>
-    function displaySum() {
-      const inputValue = document.getElementById("numberInput1").value;
-      const inputValue = document.getElementById("numberInput2").value;
-      //  const inputValue = document.querySelector('#textInput').value;
-      document.querySelector("#textDisplay").innerText = inputValue;
+    function getSum() {
+      const num1 = document.getElementById('numberInput1').value;
+      const num2 = document.getElementById('numberInput2').value;
+      const result = parseInt(num1) + parseInt(num2);
+      
+      alert(result);
     }
+
 
   </script>
 </html>
