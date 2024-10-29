@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Обработчик событий</title>
+        <style>
+            .header { front-size: 24px; }
+
+            .description {color: black;}
+            .red {color: red;}
+        </style>
+    </head>
+
+    <body>
+        <!-- <button id="myButton">Нажми меня</button> -->
+        <!-- <button onclick="alert ('Кнопка нажата')">Нажми меня</button> --> 
+        <!-- <div id="box" style="width: 100px; height: 100px; background-color: red;"></div> -->
+        
+        <h1 class="header" id="header">Заголовок</h1>
+        <button id="changeTextBtn">Изменить текст</button>
+
+        <p class="description">Это описание</p>
+        <button id="changeColorBtn">Изменить цвет</button>
+
+        <input type="text" id="username" placeholder="Введите имя">
+        <button id="showValueBtn">Показать значение</button>
+
+
+
+    </body>
+
+    <script>
+    //    function handleClick(){                      // с заранее объявленной функцией
+    //     alert ('Кнопка нажата');
+    //    }
+    //    document.getElementById('myButton').addEventListener('click',handleClick);
+
+    // document.getElementById('myButton').addEventListener('click',()=>{       // со стрелочной функцией
+    //     alert('Кнопка нажата');
+    // })
+
+    // document.getElementById('myButton').addEventListener('click', function(){    //с анонимной функцией
+    //     alert('Кнопка нажата');
+    // })
+
+    // const box =document.getElementById('box');
+    // box.addEventListener('mouseover', function (){
+    //     box.style.backgroundColor = 'blue';
+    // });
+
+    // box.addEventListener ('mouseout', function(){
+    //     box.style.backgroundColor = 'red';
+    // });
+
+    document.getElementById('changeTextBtn').addEventListener('click', function(){
+        document.getElementById('header').textContent = 'Добро пожаловать';
+    });
+
+    document.getElementById('changeColorBtn').addEventListener('click', function(){
+        document.querySelector('.description').classList.add('red');
+    });
+
+    document.getElementById('showValueBtn').addEventListener('click', function(){
+        const value = document.getElementById('username').value;
+        console.log(value);
+    });
+
+
+    </script>
+</html> 
