@@ -10,6 +10,11 @@
 
             .description {color: black;}
             .red {color: red;}
+            .item {padding: 10px; border: 1px solid black;}
+            .active {background-color: yellow;}
+            .list-item {padding: 5px;}
+            .highlight {background-color: yellow;}
+            .title {font-size: 16px;}
         </style>
     </head>
 
@@ -27,7 +32,30 @@
         <input type="text" id="username" placeholder="Введите имя">
         <button id="showValueBtn">Показать значение</button>
 
+        <button id="submit">Отправить</button>
+        <button id="changeButtonTextBtn">Изменить текст</button>
 
+        <div class="item">Элемент1</div>
+        <button id="activateItemBtn">Активировать элемент</button>
+
+        <p id="message">Сообщение</p>
+        <button id="setMessageBtn">Установить сообщение</button>
+
+        <ul>
+            <li class="list-item">Элемент1</li>
+            <li class="list-item">Элемент2</li>
+            <li class="list-item">Элемент3</li>
+        </ul>
+        <button id="highlightListBtn">Выделить элементы списка</button>
+
+        <img id="image" crs="old.image.jpg" alt="Изображение">
+        <button id="changeImageBtn">Изменить изображение</button>
+
+        <p class="counter" id="counter">0</p>
+        <button id="incrementBtn">Увеличить счетчик</button>
+        
+        <h2 class="title" id="title">Заголовок</h2>
+        <button id="increaseFontSizeBtn">Увеличить размер шрифта</button>
 
     </body>
 
@@ -67,6 +95,38 @@
         console.log(value);
     });
 
+    document.getElementById('changeButtonTextBtn').addEventListener('click', function(){
+        document.getElementById('submit').textContent = 'Отправлено';
+    });
+
+    document.getElementById('activateItemBtn').addEventListener('click', function(){
+        document.querySelector('.item').classList.add('active');
+    });
+
+    document.getElementById('setMessageBtn').addEventListener('click', function(){
+        document.getElementById('message').textContent = 'Успешно выполнено'
+    })
+
+    document.getElementById('highlightListBtn').addEventListener('click', function(){
+        document.querySelectorAll('.list-item').forEach(item=>{
+            item.classList.add('highlight');
+        });
+    });
+
+    document.getElementById('changeImageBtn').addEventListener('click', function(){
+        document.getElementById('image').crs = 'new-image.jpg';
+    });
+
+    document.getElementById('incrementBtn').addEventListener('click',function(){
+        const counterElement = document.getElementById('counter');
+        let count = parseInt(counterElement.textContent);
+        count++;
+        counterElement.textContent = count;
+    })
+
+    document.getElementById('increaseFontSizeBtn').addEventListener('click', function(){
+        document.getElementById('title').style.fontSize = '24px';
+    });
 
     </script>
 </html> 
