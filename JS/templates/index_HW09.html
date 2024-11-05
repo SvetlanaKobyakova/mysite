@@ -10,7 +10,7 @@
   </body>
 
   <script>
-    
+
 const car = {                 
   make: "BMV",
   model: "320i",
@@ -21,13 +21,101 @@ console.log(car);
 
 function road (){
   const x = Number(prompt("Введите расстояние:"));
-  const result = x / 200;
+  const time = x / 200;
+  const breakes = time / 4;
+  const timeBreaks = breakes * 1;
+  const result = time + timeBreaks;
   return Math.round(result);
   }
 alert(road());
 
 
+const watch = {                 
+  hour: 12,
+  minute: 30,
+  second: 15
+};
+console.log(watch);
+
+function showTime () {
+  let hour = watch.hour;
+  let minute = watch.minute;
+  let second = watch.second;
+  let time = `На часах: ${hour} : ${minute} : ${second}`;
+  return time;
+}
+alert(showTime());
+
+
+function changeSecond (){
+  let hour = watch.hour;
+  let minute = watch.minute;
+  let second = watch.second;
+  let seconds = Number(prompt("На сколько секунд изменить время?"))
+
+  second += seconds;
+    if (second >= 60) {
+            minute += Math.floor(second / 60);
+            second %= 60;
+    }
+    if (minute >= 60) {
+            hour += Math.floor(minute / 60);
+            minute %= 60;
+    }
+    if (hour >= 24) {
+            hour %= 24;
+    }
+
+    let result = `Время: ${hour}:${minute}:${second}`;
+    return result;
+}
+alert(changeSecond());
+
+
+function changeMinute (){
+  let hour = watch.hour;
+  let minute = watch.minute;
+  let second = watch.second;
+  let minutes = Number(prompt("На сколько минут изменить время?"))
+
+  minute += minutes;
+    if (minute >= 60) {
+            hour += Math.floor(minute / 60);
+            minute %= 60;
+    }
+    if (hour >= 24) {
+            hour %= 24;
+    }
+
+    let result = `Время: ${hour}:${minute}:${second}`;
+    return result;
+}
+alert(changeMinute());
+
+
+function changeHour (){
+  let hour = watch.hour;
+  let minute = watch.minute;
+  let second = watch.second;
+  let hours = Number(prompt("На сколько часов изменить время?"))
+
+  hour += hours;
+    if (hour >= 24) {
+            hour %= 24;
+    }
+
+    let result = `Время: ${hour}:${minute}:${second}`;
+    return result;
+}
+alert(changeHour());
+
+
+
+
+
+
+
     
 
   </script>
-</html>s
+</html>
