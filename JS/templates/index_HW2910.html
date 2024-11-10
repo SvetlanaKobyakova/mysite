@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>HW 29_10</title>
+        <style>
+            
+        </style>
+    </head>
+
+    <body>
+        <p>
+            <input type="password1" id="password1" placeholder="Введите пароль">
+            <button id="submit1">Отправить</button>
+        </p>
+
+        <p>
+            <input type="password2" id="password2" placeholder="Подтвердите пароль">
+            <button id="submit2">Отправить</button>
+        </p>
+
+    </body>
+
+    <script>
+    
+
+    document.getElementById('submit1').addEventListener('click', function(){
+        document.getElementById('submit1').textContent = 'Отправлено';
+    });
+
+    const fistPassword = document.getElementById('submit1').value;
+    const secondPassword = document.getElementById('submit2').value;
+
+    document.getElementById('submit2').addEventListener('click',function(){
+
+        if (fistPassword == secondPassword){
+            document.getElementById('submit2').textContent = 'Успешно выполнено';
+        } else {
+            document.getElementById('submit2').textContent = 'Повторите ввод';
+        }
+    })
+    
+       // не работает(((  но не знаю как сделать по-другому(
+
+   
+    </script>
+</html> 
+

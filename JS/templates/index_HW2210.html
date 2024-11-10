@@ -4,42 +4,42 @@
   <head>
     <title>HW2210</title>
     <style>
-    
+      .header {color: blue;}
     </style>
   </head>
 
   <body>
-   
-    <label for="email">Почта:</label>
-    <input type="email"  name="email" id="email" required>
-    
+
+    <h1 class="header" id="header">Как вас зовут?</h1>
+
+    <input type="text" id="username" placeholder="Введите имя">
+    <button id="showValueBtn">Ваше имя</button>
 
   </body>
 
   <script>
 
-// function showText(message) {
-//     console.log (`Вы оставили сообщение: ${message}`);
 
-//     if (message.length < 4){
-//         console.log("Все ОК")
-//     } else {
-//         throw new Error ("В вашем сообщении больше 4 символов")
-//     }
-// }
-// showText ("Приехали!");
+    // function showText(message) {
+    //     console.log (`Вы оставили сообщение: ${message}`);
 
-    // document.getElementById('email').addEventListener('click',()=>{       // со стрелочной функцией
-    //       alert('Введите почту');
-    // })
+    //     if (message.length < 4){
+    //         console.log("Все ОК")
+    //     } else {
+    //         throw new Error ("В вашем сообщении больше 4 символов")
+    //     }
+    // }
+    // showText ("Приехали!");
 
-  
+    document.getElementById('username').addEventListener('click',()=>{       // со стрелочной функцией
+        alert('Введите ваше имя');
+    })  
 
+    document.getElementById('showValueBtn').addEventListener('click', function(){
+            document.getElementById('header').textContent = 'Добро пожаловать!';
+        });
 
-// 2. Создайте кнопку
-// при помощи addEventListener повесьте на нее 3 любых события (1 - стрелочной функцией)
-// удалите любые два события
-    
+      
 
   </script>
 </html>
